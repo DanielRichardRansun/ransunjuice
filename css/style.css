@@ -200,10 +200,13 @@ body {
 .contact h2 {
   margin-bottom: 1rem;
 }
+.menu h3 {
+  font-size: 1.3rem;
+}
 .menu p,
 .contact p {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   max-width: 40rem;
   margin: auto;
   font-weight: 100;
@@ -411,12 +414,27 @@ font .credit a {
   padding-top: 0;
 }
 
+.menu .row .menu-card img {
+  width: 80%;
+}
+
 /* Mobile */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
   }
   .menu .row .menu-card {
-    flex-basis: calc(50% - 2rem); /*menampilkan setiap baris 2 produk*/
+    flex-basis: calc(100% - 2rem); /*menampilkan setiap baris 2 produk*/
+  }
+  .menu .row .menu-card img {
+    width: 100%;
+  }
+
+  .menu h3 {
+    font-size: 1.7rem;
+  }
+
+  .menu p {
+    font-size: 1.6rem;
   }
 }
